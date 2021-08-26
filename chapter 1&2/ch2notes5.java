@@ -45,25 +45,31 @@ public class ch2notes5
                 //These are Objects
                 Integer number = new Integer(47); //wrapper class, WCs for all basic data class
                 
-              /*
-               * [class] [id] = new [class]([data]);
-               * [class]([data]) is called a constructor. some objects dont need data
-               * String is an exception, can be initialized by 'String last = "hayes";' instead
-               */
+             /*
+              * [class] [id] = new [class]([data]);
+              * [class]([data]) is called a constructor. some objects 
+              * dont need data (like string). String is an exception, only 
+              * one that can be initialized by 'String last = "hayes";' instead
+              */
                 String myname = new String("Kevin Hayes");
                 Integer n2 = 7;//Auto Boxing
         /**/
                 String word = new String("Homer Simpson");
                 String word2 = new String("Homer Simpson");
                 String word3 = new String("Bart Simpson");
-                String name = new String("Mike");
+                String name = new String();
+                
+              //left to right association
+              //System.out.println(word + name + 7 + 5);
+              //System.out.println(word + name + (7 + 5));
+              //System.out.println(7 + 5 + word)
+                
                 String last = "Hayes";
-        
         
         /*
                 System.out.printf("Name:  %s \t ID: %5d \n", name,id);
-                System.out.println( 'a' + 100 );
-                System.out.println('a'   );
+                System.out.println( 'a' + 100 ); //this adds the ascii value (97) + 100
+                System.out.println('a'   ); // find ascii values via TextPad
                 System.out.println("A"+100  );
         
         //      System.out.printf(  );
@@ -79,28 +85,35 @@ public class ch2notes5
         
                 num1 = 23.89765; num2 = 3.4;
         //Your create a NumberFormat and Decimalformat object
-        
-        
+        //'new' is bundeled into .getCurrencyInstance()
                 NumberFormat money = NumberFormat.getCurrencyInstance();
                 NumberFormat percent = NumberFormat.getPercentInstance();
-                DecimalFormat fmt =new DecimalFormat("0.###");
+                DecimalFormat fmt = new DecimalFormat("0.###");
                 DecimalFormat fmt2= new DecimalFormat("0.00");// ## vs 00
+        //padding with 0s forces those two decimal points, rounds if too many digits
+        //padding with #s doesnt force the decimal points, rounds if too many digits
                 
-        
+        //java doesnt have functions like python - methods
+        //                                          obj.method();
                 System.out.println( "Sub Total: " + money.format(num1) );
                 System.out.println( "Sub Total: " + percent.format(num1) );
                 System.out.println( "Sub Total: " + fmt.format(num1) );
                 System.out.println( "Sub Total: " + fmt2.format(num2) );
         
-        
         // page 90 Why do we get this Error???
-        /*
+        /**/
                 System.out.print("Enter a number ");
                 x = Keyboard.nextInt   ();
                 System.out.println(x  );
                 System.out.print("Enter a word ");
                 //word = Keyboard.next   ();
                 word = Keyboard.nextLine   ();
+
+                System.out.print("Enter three numbers ");
+                x = Keyboard.nextInt   ();
+                y = Keyboard.nextInt   ();
+                z = Keyboard.nextInt   ();
+                System.out.print(x + " " + y + " " + z);
         
         /*
                 System.out.print("Enter a decimal");
