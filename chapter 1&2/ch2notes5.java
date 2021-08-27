@@ -101,13 +101,17 @@ public class ch2notes5
                 System.out.println( "Sub Total: " + fmt2.format(num2) );
         
         // page 90 Why do we get this Error???
-        /**/
+        /.nextDouble(), nextInt(), nextLong()
+        /*
                 System.out.print("Enter a number ");
                 x = Keyboard.nextInt   ();
                 System.out.println(x  );
                 System.out.print("Enter a word ");
-                //word = Keyboard.next   ();
-                word = Keyboard.nextLine   ();
+
+                Keyboard.nextLine();//clear the input buffer + ? data
+
+                word = Keyboard.next   ();//gets up till whitespace
+                //word = Keyboard.nextLine   (); //get input to \n
 
                 System.out.print("Enter three numbers ");
                 x = Keyboard.nextInt   ();
@@ -141,34 +145,50 @@ public class ch2notes5
         
         /*
         //  Can we make a Math Object? What type of class is Math???
-              Math silly = new Math();
-        
-                System.out.println(Math.abs(-4));
-                System.out.println(Math.sqrt (12));
-                System.out.println(Math.pow(2,3));
+        //    Math silly = new Math(); //Math is a static class, dont need an object
+        //    cant use an object too . just use it
+        //    math.whatever() returns a number
+
+                System.out.println(Math.abs(-4)); // absolute value
+                System.out.println(Math.sqrt (12)); //sqrt
+                System.out.println(Math.pow(2,3)*7); //2^3
         //      System.out.println(silly.pow(2,4));
         
         
         /*
         //!!!!!!!!!!!! Make a Random Object called generator
+        //
                 Random generator = new Random();
         
-                x = generator.nextInt(100);
+                x = generator.nextInt(100); //random # from 0-99
                 System.out.println("the Random number is " + x);
-        
+                
+                //17 digits decimal * howmany + range        
+                //generates # from 0-1 of 17 digits
                 num =generator.nextDouble()*50;
+                System.out.println(num);
+                
+                //random # from 100-200 + 100
+                //              *howmany+range
+                num =Math.random()*100+100;
                 System.out.println(num);
         /*
         
-        /*
+        /**/
         //----------------------------Know it live it love it p 78
                 //word is an oject can do things (NOT len(word))
                 System.out.println(  word.length() );
-                System.out.println(word == word2 );
-                System.out.println( x == 9 );
-                System.out.println(  word.compareTo(word3 ));
+                System.out.println(word == word2 );//returns false
+                //cant compare objects - compares memory addresses
+                System.out.println(word.equals(word2));
+                //right way to compare String object
+                System.out.println( x == 9 );//returns true
+                //primitive data values
+                System.out.println(  word.compareTo(word3 )); //compares first characters
+                //positive = greater position
+                //negative = lesser position
                 System.out.println(  word.indexOf("p"));
-                
+                //returns index position of the search term
                 
         
         
