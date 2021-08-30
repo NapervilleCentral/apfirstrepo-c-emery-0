@@ -174,7 +174,7 @@ public class ch2notes5
                 System.out.println(num);
         /*
         
-        /**/
+        /*
         //----------------------------Know it live it love it p 78
                 //word is an oject can do things (NOT len(word))
                 System.out.println(  word.length() );
@@ -189,8 +189,14 @@ public class ch2notes5
                 //negative = lesser position
                 System.out.println(  word.indexOf("p"));
                 //returns index position of the search term
-                
-        
+                System.out.println(  word.charAt(6));
+                //returns the letter at index position
+
+                int find = word.indexOf("S");
+                System.out.println(  word.substring(find));
+                //slice up the string from index to the end
+                System.out.println(  word.substring(find,find+2));
+                //slice up the string from index to endIndex
         
         
         
@@ -200,7 +206,14 @@ public class ch2notes5
         
             //System.out.println( (char)101 );
         /*
-                double conversionFactor = (double)x/5; //9/5 logic error -- promotion 5.0
+                double conversionFactor = (double)x/5; 
+                    //returns 1.8 - (double) is a cast; promotes 5 to 5.0
+              //double conversionFactor = 9/5 
+                    //2 integer expression returns an integer (9/5 = 1)
+              //double conversionFactor = 9.0/5 
+                    //returns 1.8 - this is called promotion (automatically promotes 5 to 5.0)
+              //double conversionFactor = (int)(9.0/5)
+                    //demotes 1.8 to 1
                 System.out.println(conversionFactor);
                 final int BASE = 32;            // cast is (data type)
                 int celsiusTemp = 30;
@@ -215,7 +228,7 @@ public class ch2notes5
             //num = num - num;
             //num = num * num;
             //num = num / num;
-            num = num % 3;
+            num = num % 3; //modulus - remainder
             System.out.println(num);
         
         
@@ -229,7 +242,11 @@ public class ch2notes5
 }//end of class
 
 
+/*
 
+copy paste outputs here
+
+*/
 
 
 
