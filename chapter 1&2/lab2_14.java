@@ -1,7 +1,8 @@
 
 /**
- *  Write an application that creates and prints a random phone number of the
- *  form XXX-XXX-XXXX
+ * Chapter 2 Lab Program 2.14 - Random Phone Number
+ * Write an application that creates and prints a random phone number of the
+ * form XXX-XXX-XXXX
  *
  * celeste emery
  * 8-31-21

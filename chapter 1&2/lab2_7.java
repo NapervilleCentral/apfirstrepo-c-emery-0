@@ -1,10 +1,12 @@
 
 /**
+ * Chapter 2 Lab Program 2.7 - Time
  * Translate and print out hours, minutes, and seconds from some amount of seconds.
  *
  * Celeste Emery, Samantha Pan
  * 8-30-21
  */
+
 import java.util.Scanner;
 
 public class lab2_7 {
@@ -12,7 +14,7 @@ public class lab2_7 {
         Scanner Keyboard = new Scanner(System.in);
 
         System.out.print("Enter seconds ");
-        int time = Keyboard.nextInt   ();
+        int time = Keyboard.nextInt();
 
         //This is the version we wrote before receiving feedback from Mr. Hayes
         //System.out.println("Hours: "+ (int)(time / 3600));

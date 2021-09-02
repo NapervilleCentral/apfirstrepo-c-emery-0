@@ -1,4 +1,6 @@
+
 /**
+ * Chapter 2 Lab Program 2.9 - Sphere Calculator
  * Find area & circumference given the radius of a sphere.
  *
  * Celeste Emery
@@ -16,11 +18,11 @@ public class lab2_9 {
         System.out.print("Enter radius: ");
         double radius = Keyboard.nextInt();
 
-        double pi = 3.1415;
-        double volume = pi * Math.pow(radius, 3) * 4 / 3; //calculate volume of sphere
-        double area = pi * Math.pow(radius, 2) * 4; //calculate area of sphere
+        double volume = Math.PI * Math.pow(radius, 3) * 4 / 3; //calculate volume of sphere
+        double area = Math.PI * Math.pow(radius, 2) * 4; //calculate area of sphere
        
-        //formatting numbers (volume & S.A. - 4 decimals, radius - decimal if necessary)
+        //formatting numbers 
+        //(volume & S.A. - 4 decimals, radius - decimal if necessary)
         DecimalFormat fmt1 = new DecimalFormat("0.#");
         DecimalFormat fmt2 = new DecimalFormat("0.0000");
        
