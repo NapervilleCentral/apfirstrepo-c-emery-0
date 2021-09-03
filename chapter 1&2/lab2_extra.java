@@ -20,8 +20,8 @@ public class lab2_extra {
         //Splice name into two (right between 1st + 2nd character of the middle name)
         int middleInit = name.indexOf(" ") + 1;
         String firstToMiddleInit = name.substring(0, middleInit+1);
-        String middleInitToLast = name.substring(middleInit);
-        int lastInit = middleInitToLast.indexOf(" ") + firstToMiddleInit.length();
+        String middleToLast = name.substring(middleInit);
+        int lastInit = middleToLast.indexOf(" ") + firstToMiddleInit.length();
 
         System.out.println(firstToMiddleInit + ".\n" + name.substring(lastInit));
         

@@ -176,27 +176,28 @@ public class ch2notes5
         
         /*
         //----------------------------Know it live it love it p 78
-                //word is an oject can do things (NOT len(word))
+                 //word is an oject can do things (NOT len(word))
                 System.out.println(  word.length() );
                 System.out.println(word == word2 );//returns false
-                //cant compare objects - compares memory addresses
+                 //cant compare objects - compares memory addresses
                 System.out.println(word.equals(word2));
-                //right way to compare String object
+                 //right way to compare String object
                 System.out.println( x == 9 );//returns true
-                //primitive data values
+                 //primitive data values
                 System.out.println(  word.compareTo(word3 )); //compares first characters
-                //positive = greater position
-                //negative = lesser position
+                    //positive = greater position
+                 //negative = lesser position
                 System.out.println(  word.indexOf("p"));
-                //returns index position of the search term
+                 //returns index position of the search term
+                 //returns -1 if not in search term
                 System.out.println(  word.charAt(6));
-                //returns the letter at index position
+                  //returns the letter at index position
 
                 int find = word.indexOf("S");
                 System.out.println(  word.substring(find));
-                //slice up the string from index to the end
+                   //slice up the string from index to the end
                 System.out.println(  word.substring(find,find+2));
-                //slice up the string from index to endIndex
+                    //slice up the string from index to endIndex
         
         
         
