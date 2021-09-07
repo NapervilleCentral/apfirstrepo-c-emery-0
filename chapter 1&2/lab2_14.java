@@ -17,11 +17,13 @@ public class lab2_14 {
        
         //Find random values for each segment of the phone number
         int areacode = (generator.nextInt(7) + 1) * 100
-                     + (generator.nextInt(8)*10) //Area code can neither have an
-                     + (generator.nextInt(8));   //8 or 9, nor start with 0
+                     + (generator.nextInt(8)*10) //Area code can neither have an-
+                     + (generator.nextInt(8));   //-8 or 9, nor start with 0
         int exchangecode = generator.nextInt(743); //Exchange code must be <743
         int linenumber = generator.nextInt(10000); //Line number may be anything
-       
+        
+        //Formatting for the phone number (necessary in case #s begin with 0, 
+        //so it would actually print the 0 instead of automatically omitting it)
         DecimalFormat fmt = new DecimalFormat("000");
         DecimalFormat fmt2 = new DecimalFormat("0000");
         System.out.println("Your random phone number is: "+ fmt.format(areacode)

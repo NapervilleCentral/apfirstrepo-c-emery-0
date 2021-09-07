@@ -21,8 +21,8 @@ public class lab2_9 {
         double volume = Math.PI * Math.pow(radius, 3) * 4 / 3; //calculate volume of sphere
         double area = Math.PI * Math.pow(radius, 2) * 4; //calculate area of sphere
        
-        //formatting numbers 
-        //(volume & S.A. - 4 decimals, radius - decimal if necessary)
+        //formatting numbers
+        //volume & S.A. - round to 4 decimals, radius - decimal if necessary
         DecimalFormat fmt1 = new DecimalFormat("0.#");
         DecimalFormat fmt2 = new DecimalFormat("0.0000");
        

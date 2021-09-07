@@ -14,7 +14,7 @@ public class lab2_12 {
     public static void main(String[] args) {
         Scanner Keyboard = new Scanner(System.in);
        
-        //Ask user for values
+        //Ask user for coin values
         System.out.println("How many quarters? ");
         int quarters = Keyboard.nextInt();
         System.out.println("How many dimes? ");
@@ -23,15 +23,6 @@ public class lab2_12 {
         int nickels = Keyboard.nextInt();
         System.out.println("How many pennies? ");
         int pennies = Keyboard.nextInt();
-       
-        //Other method of retrieving info
-        /*
-         * System.out.println("Enter # of quarters, dimes, nickels, pennies: ");
-         * int quarters = Keyboard.nextInt();
-         * int dimes = Keyboard.nextInt();
-         * int nickels = Keyboard.nextInt();
-         * int pennies = Keyboard.nextInt();
-         */
        
         //Calculate total amount of money from user's values
         double total = quarters * 0.25 + dimes * 0.1 

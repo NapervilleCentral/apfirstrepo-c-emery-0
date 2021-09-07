@@ -21,14 +21,10 @@ public class lab2_extra {
         int middleInit = name.indexOf(" ") + 1;
         String firstToMiddleInit = name.substring(0, middleInit+1);
         String middleToLast = name.substring(middleInit);
+        //Find last name's first initial, helps to isolate the last name
         int lastInit = middleToLast.indexOf(" ") + firstToMiddleInit.length();
 
         System.out.println(firstToMiddleInit + ".\n" + name.substring(lastInit));
-        
-       
-        //Display the user's name
-        //System.out.println("Your name is:\n" + first + " " + middle.charAt(0)
-        //+ ".\n" + last);
     }
 }
 
